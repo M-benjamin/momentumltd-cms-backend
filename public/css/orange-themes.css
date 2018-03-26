@@ -1,0 +1,43 @@
+.navbar-default .navbar-nav>.active>a,
+.consultation a:hover,
+.introduction button,
+.introduction a:hover,
+#services button,
+.subscribe-content button,
+.gal-overlay:hover button,
+#contact-us input[type="submit"],
+.footer-top .fa,
+.option-box .gear-check
+
+{
+    background-color: #ff9800;
+}
+
+.about-bottom span,
+.services-top h2 span,
+.services-bottom .fa,
+.serv-right span,
+#testimonials span
+{
+    color: #ff9800;
+
+}
+
+.option-box .color-option {
+    
+    color: #ff9800;
+    border: 2px solid #ff9800;
+
+}
+
+#testimonials .carousel-indicators li {
+
+    border: 3px solid #ff9800;
+
+}
+
+
+
+
+
+

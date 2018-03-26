@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/default-themes.css">
+    <!-- Fav icon here -->
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo:300,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin:300,400,600" rel="stylesheet">
+
+
+    <title>Momentum Services Ltd</title>
+</head>
+
+
+
+<body data-spy="scroll">
+
+
+    <!-- ============================================================================================ tool color box ================================================================================================== -->
+
+    <!-- =<section class="option-box">
+       
+       <div class="color-option">
+           <h4>Color Option</h4>
+           
+           <ul class="list-unstyled">
+               <li data-value="css/default-themes.css"></li>
+               <li data-value="css/green-themes.css"></li>
+               <li data-value="css/orange-themes.css"></li>
+               <li data-value="css/red-themes.css"></li>
+    
+           </ul>
+           
+           
+       </div>
+        <i class="fa fa-gear fa-3x gear-check"></i>
+    </section>
+
+   
+   
+   <!-- =============================================================================================== Header ================================================================================================== -->
+
+
+
+    <header id="top">
+        <div class="header-background">
+            <div class="background-color">
+                <div class="infos">
+                    <div class="container">
+                        <div class="row">
+                            <!-- <div class="contact col-lg-7 col-md-7 col-sm-7 col-xs-12">  -->
+
+                            <!-- ================== navigation ==============================  -->
+
+                            <div id="navigation">
+                                <div class="container">
+                                    <div class="row">
+                                        <nav class="navbar navbar-default col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                            <div class="container-fluid">
+                                                <!-- Brand and toggle get grouped for better mobile display -->
+                                                <div class="navbar-header">
+                                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                                                        aria-expanded="false">
+                                                        <span class="sr-only">Toggle navigation</span>
+                                                        <span class="icon-bar"></span>
+                                                        <span class="icon-bar"></span>
+                                                        <span class="icon-bar"></span>
+                                                    </button>
+                                                    <!--Logo-->
+                                                    <a class="navbar-brand logo" href="#">
+                                                        <img src="images/log.png" alt="logo">
+                                                    </a>
+                                                </div>
+                                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                                    <ul class="nav navbar-nav" role="tablist">
+                                                        <li>
+                                                            <a href="#">Home
+                                                                <span class="sr-only">(current)</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#about">About Us</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#services">Engagements</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#project">Services</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#team">Carriers</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#testimonials">Testimony</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- /.navbar-collapse -->
+                                            </div>
+                                            <!-- /.container-fluid -->
+                                        </nav>
+                                        <div class="consultation col-lg-3 col-md-3 hidden-sm hidden-xs">
+                                            <a href="#contact-us" class="hvr-grow">Contact US</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ================== ENd navigation ==============================  -->
+
+                            <!-- </div> -->
+                        </div>
+
+                    </div>
+
+
+                    <!-- SEPARATOR LINE -->
+                    <span class="separator"></span>
+                    <!-- ========= Manage the email here ============= -->
+                    
+                        <!-- ========= END Manage the email here ============= -->
+
+
+                        <!-- ===== Introduction section ============= -->
+                        <div class="introduction">
+
+                            <div class="container">
+                                <div class="row">
+
+                                    <!--Header-text-->
+                                    <p>MOMENTUM SERVICES LTD </p>
+                                    <h3>Providing catering for high speed trains since 2001</h3>
+                                    <!--  <button id="more1" class="hvr-grow">Learn More</button>
+                            <br class="hidden-lg hidden-md hidden-sm"> <a href="" class="hidden-lg hidden-md">Free Consultation</a> </div>-->
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+    </header>
+
+
+    <!-- =============================================================================================== About ================================================================================================== -->
+
+    
+    <section id="about" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                @each(aboutContent in content)
+                <div class="about-top">
+                    <div class="about-intro col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        
+                        <!-- Title of about us -->
+                        @if(aboutContent.identifier == "about-title")
+                            <h2>{{ aboutContent.data }}</h2>
+                        @endif
+                        
+                        <span>Momentum Services Ltd</span>
+                        <!-- Description of about us -->
+                        <p>Momentum Services Ltd is the Company providing on board services on the high- speed trains linking
+                            London to Paris, Brussels, Amsterdam, Rotterdam, Disneyland, Marseille and the French Alps through
+                            the Channel Tunnel. </p>
+                        <p>Our goal is to improve our performance continuously delight our customers by exceeding their expectations
+                            promote the growth of our company</p>
+                        <p>To meet these goals we have a management system in place hat complies with all relevant legal requirements
+                            and the requirements of </p>
+                        <ul>
+                            <li>ISO9001 : 2008 – Quality management system</li>
+                            <li>ISO 14001 : 2004 – Environmental management systems </li>
+                            <li>ISO 22000 : 2005 – Food safety management systems </li>
+                        </ul>
+                    </div>
+                    <img src="images/abt.jpg" alt="" class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> 
+                   
+                </div>
+                 @endeach
+                <div class="about-bottom">
+                    <!-- More Description of about us -->
+                    <div class="services-top">
+                        <!-- <h2>Our Values</h2> -->
+                        <!--short description of services-->
+                        <!-- <p>Offer innovative, appropriate and safe products to our customers.</p>
+                    </div>
+                    <div class="about-middle-column col-lg-4 col-md-4 col-sm-12 col-xs-12"> <span>1. Environment</span>
+                        <p>Respect the environment that we and our customers inhabit.</p>
+                    </div>
+                    <div class="about-middle-column col-lg-4 col-md-4 col-sm-12 col-xs-12"> <span>2. People</span>
+                        <p>Encourage and support our people to positively contribute to the business.</p>
+                    </div>
+                    <div class="about-middle-column col-lg-4 col-md-4 col-sm-12 col-xs-12"> <span>3. Partnership</span>
+                        <p>Work in partnership with our client, our customers, our suppliers. </p>
+                    </div>
+                </div> -->
+
+                    </div>
+                </div>
+    </section>
+    
+
+
+    <!-- =============================================================================================== Services ================================================================================================== -->
+    <section id="services" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="services-top">
+                    <h2>Our Engagements</h2>
+                    <!--short description of services-->
+                    <p>We aim to be the leading provider of hospitality and catering services for International train services
+                        .</p>
+                </div>
+                <div class="services-bottom">
+                    <!-- icon of services each one with her description-->
+                    <div class="serv col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <i class="fa fa-group" aria-hidden="true"></i>
+                        <div class="serv-right">
+                            <span>For our clients</span>
+                            <p>Consistently meet our client’s requirement in terms of agreed levels of service and product.</p>
+                        </div>
+                    </div>
+                    <div class="serv col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                        <div class="serv-right">
+                            <span>For our Team</span>
+                            <p>Encourage, empower and develop employees to contribute their experience and imagination to deliver
+                                the best possible service to the customer.</p>
+                        </div>
+                    </div>
+                    <div class="serv col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        <div class="serv-right">
+                            <span>For the Planet</span>
+                            <p>Actively seek to implement environmentally friendly, energy efficient and non-polluting techniques
+                                and/or methods with particular attention to: our suppliers, packaging & product choice, waste
+                                management and environmental awareness </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- =============================================================================================== Subscribe ================================================================================================== -->
+
+
+
+    <!-- <section id="subscribe">
+        <div class="Subscribe-background">
+            <div class="container">
+                <div class="subscribe-content">
+                    <h2>Keep In Touch</h2>
+                    <p>Sign Up For Newsletter Dont Worry About Spam We Hate It Too.</p>
+                    <form class="form-inline" action="php/subscribe.php" method="post">
+                        <input class="form-control input-lg" type="email" name="email" placeholder="Write Your Email">
+                        <button class="btn btn-info btn-lg hvr-wobble-vertical"><i class="fa fa-edit fa-lg"></i> Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- =============================================================================================== Project ================================================================================================== -->
+
+
+    <section id="project" class="scroll">
+        <div class="container">
+            <div class="row">
+                <h2 class="gallery-title">Our Services</h2>
+                <div class="left-gal col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="gal-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="gal-overlay">
+                            <div class="gallery-info">
+                                <h4>Service on Board</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gal-2 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="gal-overlay">
+                            <div class="gallery-info">
+                                <h4>Business Lounge</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-gal col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="gal-4 col-lg-12 col-md-12">
+                        <div class="gal-overlay">
+                            <div class="gallery-info">
+                                <h4>Plateform Assistance</h4>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =============================================================================================== Team ================================================================================================== -->
+
+    <section id="team" class="scroll">
+        <div class="container">
+            <div class="row">
+                <h2>Carrier</h2>
+                <p class="team-intro">As a Momentum Services crew member you will engage with customers and be an ambassador to the company making
+                    our guest journey an unforgettable experience. The Momentum Services branding is also conveyed through
+                    immaculate uniform presentation and a positive attitude. We are looking for Lounge staff and cabin crew
+                    with excellent customer service skills to deliver a unique experience to all our customers.</p>
+                <div class="owl-carousel owl-theme">
+
+                    <!--Team-->
+                    <div class="item">
+                        <div class="team-img">
+                            <!--change image team-->
+                            <img src="images/euro09.jpg" alt="team1"> </div>
+                        <div class="team-hover">
+                            <div class="team-info">
+                                <!--change team info-->
+                                <h4>CREW ROLE AT MSL:</h4>
+                                <p>
+                                     THE ROLE: Delivering a smooth on board catering
+                                    and fine dining style customer service to our travellers on board the Eurostar trains.
+                                </p>
+                                <dl>
+                                    <dt>
+                                        <strong>Key areas of responsibility :</strong>
+                                    </dt>
+                                    <dd> Ensure the satisfaction of the passengers</dd>
+                                    <dd> To carry out On Board service procedures</dd>
+                                    <dd> To assist with the evacuation of the train if so directed by the Train Manager</dd>
+                                    <dd> To carry out all financial aspects of their job</dd>
+
+                                    <dt class="dt2">
+                                        <strong>Person specifications for the position :</strong>
+                                    </dt>
+                                    <dd> Experience within the Catering/Hospitality industry, both practical and theoretical
+                                        knowledge</dd>
+                                    <dd> Strong conversational Dutch or French and English </dd>
+                                </dl>
+                            </div>
+                            <!--change team social links-->
+                            <div class="s-link">
+                                <?php 
+                                echo "<a href=\"mailto:recruitment@momentumltd.eu\"><i class=\"fas fa-hand-point-right\"></i>recruitment@momentumltd.eu</a>"; 
+                                ?>
+                            </div>
+                        </div>
+
+                        <div class="team-title">
+                            <h5>CREW (ESS)</h5>
+                            <span> - ON BOARD CATERING -</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="team-img">
+                            <img src="images/persor.jpg" alt="team1"> </div>
+                        <div class="team-hover">
+                            <div class="team-info">
+                                <h4>PURSER ROLE AT MSL :</h4>
+                                <p>
+                                    THE ROLE: Leading the cabin crew to deliver smooth
+                                    on board catering and fine dining style customer service. We offer our passionate Pursers:
+                                </p>
+                                <dl>
+                                    <dt>
+                                        <strong>Key areas of responsibility :</strong>
+                                    </dt>
+                                    <dd> Ensure the satisfaction of the passengers</dd>
+                                    <dd> To carry out On Board service procedures</dd>
+                                    <dd> To assist with the evacuation of the train if so directed by the Train Manager</dd>
+                                    <dd> Assess crew members performance through on board assessments</dd>
+                                    <dd> To carry out all financial aspects of their job</dd>
+
+                                    <dt class="dt2">
+                                        <strong>Person specifications for the position :</strong>
+                                    </dt>
+                                    <dd> Experience within the Catering/Hospitality industry, both practical and theoretical
+                                        knowledge</dd>
+                                    <dd> Experience in team management</dd>
+                                    <dd> Strong conversational Dutch or French and English</dd>
+                                </dl>
+                            </div>
+                            <!--change team social links-->
+                            <div class="s-link">
+                                <?php 
+                                echo "<a href=\"mailto:recruitment@momentumltd.eu\"><i class=\"fas fa-hand-point-right\"></i>recruitment@momentumltd.eu</a>"; 
+                                ?>
+                            </div>
+                        </div>
+                        <div class="team-title">
+                            <h5>PURSER</h5>
+                            <span>CUSTOMER SERVICES</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="team-img">
+                            <img src="images/assistant.jpg" alt="team1"> </div>
+                        <div class="team-hover">
+                            <div class="team-info">
+                                <h4>PLATFORM ASSISTANT</h4>
+                                <dl>
+                                    <dt>
+                                        <strong>Report to:</strong>
+                                    </dt>
+                                    <dd> Service performance team leader</dd>
+                                    
+
+                                    <dt class="dt2">
+                                        <strong>
+Compulsory requirements to apply:</strong>
+                                    </dt>
+                                    <dd> Experience in customer service in direct contact with the public</dd>
+                                    <dd> Good level of French and English language. (you will be assessed)</dd>
+                                    <dd> Holder of an EU (EEA*) passport / Valid Schengen visa / UK right to work</dd>
+                                    <dd> Given legislation controlling access to restricted zones, you will be required to successfully provide</dd>
+                                    <dd> references from previous employers</dd>
+
+
+                                     <dt class="dt2">
+                                        <strong>
+                                        The position involves :</strong>
+                                    </dt>
+                                    <dd> Daily cleaning of all WMF coffee machines prior to on board team arrival.</dd>
+                                    <dd> Supporting on-board teams in the train service preparation.</dd>
+                                    <dd> Welcoming and greeting passengers during boarding.</dd>
+                                    <dd> Being knowledgeable on the armoires and equipment on board for rapidity checks.</dd>
+                                    <dd> Being able to work autonomously in a fast pace environment including during disruptions.</dd>
+                                    <dd> Being able to submit clear and explanatory feedback in relation to the above duties.</dd>
+                                    <dd> Being flexible in terms of schedule and rota in line with train departures.</dd>
+                                    
+                                    
+                                </dl>
+                            </div>
+                            <div class="s-link">
+                                <?php 
+                                echo "<a href=\"mailto:recruitment@momentumltd.eu\"><i class=\"fas fa-hand-point-right\"></i>recruitment@momentumltd.eu</a>"; 
+                                ?>
+                            </div>
+                        </div>
+                        <div class="team-title">
+                            <h5>PLATFORM</h5>
+                            <span> Assistant</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="team-img"> <img src="images/euro077.jpg" alt="team1"> </div>
+                        <div class="team-hover">
+                            <div class="team-info">
+                                <h4>LOUNGE </h4>
+                                <p>THE ROLES :
+We are seeking outgoing and dynamic individuals who can deliver an outstanding service to our customers.
+ </p>  
+ <dl>
+                                    <dt>
+                                        <strong>We currently have a range of positions available front of house and back of house:</strong>
+                                    </dt>
+                                    <dd>  Host/Hostess</dd>
+                                    <dd>  Waiter/Waitress</dd>
+                                    <dd>  Bartenders-mixologists</dd>
+                                    <dd>  Team leaders</dd>
+                                    <dd>  Host/Hostess</dd>
+                                    <dd>  Assistant managers</dd>
+                                    <dd>  Back of house (French Language not required)</dd>
+                                    <dd>  Cleaners (French Language not required)</dd>
+                                    <dd>  Full-time and part-time positions are available, morning shifts (4-12) and afternoon shifts (12-20)</dd>
+                                    
+
+                                    <dt class="dt2">
+                                        <strong>
+                                        Person specifications for the position:</strong>
+                                    </dt>
+                                    <dd>  Experience within the Catering / Hospitality industry, both practical and theoretical knowledge</dd>
+                                    <dd>  Strong conversational French and English</dd>
+
+                                    <dd> Must be eligible to work in the UK or have a valid UK work permit/visa.</dd>
+
+                                       
+                                </dl>
+                            </div>
+                            <div class="s-link"> 
+                                <?php 
+                                echo "<a href=\"mailto:lounge.recruitment@momentumltd.eu\"><i class=\"fas fa-hand-point-right\"></i>lounge.recruitment@momentumltd.eu</a>"; 
+                                ?>
+                             </div>
+                        </div>
+                        <div class="team-title">
+                            <h5>LOUNGE</h5>  </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =============================================================================================== Testimonials ================================================================================================== -->
+
+
+    <section id="testimonials" class="text-center">
+        <div class="container">
+            <div class="row">
+                <h2>Testimony</h2>
+                <div id="carousel_testimonials" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <p>
+                                <!--change testimonial users-->
+                                <img src="images/Lquotes.png" alt="quote" class="lquote"> Very Nice service
+                                <img src="images/Rquotes.png" alt="quote" class="rquote">
+                            </p>
+                            <!--change name users-->
+                            <span>Diane MALO</span>
+                        </div>
+                        <div class="item">
+                            <p>
+                                <img src="images/Lquotes.png" alt="quote" class="lquote"> Great!
+                                <img src="images/Rquotes.png" alt="quote" class="rquote">
+                            </p>
+                            <span>Alain ATTICA</span>
+                        </div>
+                        <div class="item">
+                            <p>
+                                <img src="images/Lquotes.png" alt="quote" class="lquote"> OMG.
+                                <img src="images/Rquotes.png" alt="quote" class="rquote">
+                            </p>
+                            <span>Seb</span>
+                        </div>
+                        <div class="item">
+                            <p>
+                                <img src="images/Lquotes.png" alt="quote" class="lquote"> Amazing!
+                                <img src="images/Rquotes.png" alt="quote" class="rquote">
+                            </p>
+                            <span>Kim Kardashian</span>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <!--change profile image users-->
+                        <li data-target="#carousel_testimonials" data-slide-to="0" class="active">
+                            <img src="images/team01.png" width="74" height="74" alt="Diane" /> </li>
+                        <li data-target="#carousel_testimonials" data-slide-to="1">
+                            <img src="images/team02.png" width="74" height="74" alt="Alain" /> </li>
+                        <li data-target="#carousel_testimonials" data-slide-to="2">
+                            <img src="images/team03.png" width="74" height="74" alt="Seb" /> </li>
+                        <li data-target="#carousel_testimonials" data-slide-to="3">
+                            <img src="images/team04.png" width="74" height="74" alt="Kim" /> </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- =============================================================================================== Success ================================================================================================== -->
+
+
+
+    <section id="success">
+        <div class="background-success">
+            <div class="container">
+                <div class="row">
+                    <div class=" stats-column col-md-3 col-sm-6">
+                        <!--change icons here-->
+                        <div class="stats">
+                            <i class="fa fa-users fa-5x"></i>
+                            <!--change numbers here-->
+                            <div class="stats-details">
+                                <span class="timer">800</span>
+                                <h2>Members staff</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats-column col-md-3 col-sm-6">
+                        <div class="stats">
+                            <i class="fa fa-comments fa-5x"></i>
+                            <div class="stats-details">
+                                <span class="timer">10</span>
+                                <h2>years of average seniority</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats-column col-md-3 col-sm-6">
+                        <div class="stats">
+                            <i class="fa fa-newspaper-o fa-5x"></i>
+                            <div class="stats-details">
+                                <span class="timer">10 Million</span>
+                                <h2>Travellers</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats-column col-md-3 col-sm-6">
+                        <div class="stats">
+                            <i class="fa fa-support fa-5x"></i>
+                            <div class="stats-details">
+                                <span class="timer">600 000</span>
+                                <h2>Coffee served</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- =============================================================================================== Contact-us ================================================================================================== -->
+
+
+
+    <section id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="contact-form col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h2>Where we are</h2>
+                    <p>Contact us today, and get reply with in 24 hours!</p>
+                    <form name="" method="post" action="">
+                        <input type="text" placeholder="Subject" name="subject" required>
+                        <input type="email" placeholder="Email" name="email" required>
+                        <textarea placeholder="Message" name="message" required></textarea>
+                        <input type="submit" value="Send">
+
+                    </form>
+
+
+                </div>
+                <div id="map" class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:370px;"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- =============================================================================================== Footer ================================================================================================== -->
+
+ <footer>
+        <div class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-top">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <h4>Momentum UK</h4>
+                                <p>
+                                    N° Tel : 0044(0)2078437768
+                                </p>
+                                
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <h4>Momentum NL</h4>
+                                <p>
+                                    N° Tel : 0032(0)24312590
+                                </p>
+                                <!-- <div class="social-network">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.instagram.com/ momentum_ams/?hl=fr">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <h4>Momentum France</h4>
+                                <p>
+                                    N° Tel : 0033(0)44537565
+                                </p>
+                                <!-- <div class="social-network">
+                                            <ul>
+                                                <li><a href="https://www.instagram.com/ momentum_ams/?hl=fr"><i class="fa fa-instagram"></i></a></li>
+                                            </ul>
+                                    </div> -->
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 footer-menu mt-3">
+                            <ul class="nav-footer list-unstyled">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Engagements</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Carriers</a>
+                                </li>
+                                <li>
+                                    <a href="#">Testimony</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 col-sm-12 copyright">
+                            <h5>©2017
+                                <a href="#">Momentum Services LTD</a>
+                        </div>
+                        <div class="social-network">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/ MomentumServicesLtd/">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/ momentum_ams/?hl=fr">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- ============================================================================================ scroll to top ================================================================================================== -->
+    <div id="to-top">
+        <i class="fa fa-chevron-up fa-3x"></i>
+    </div>
+    <!-- ============================================================================================ Scripts and links ================================================================================================== -->
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        function myMap() {
+            var mapOptions = {
+                center: new google.maps.LatLng(51.5, -0.12) //here you can specify your location
+                    ,
+                zoom: 10,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+            }
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        }
+    </script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxdhKC_EB71_upPMMLC17whhW3lu59ifo&callback=myMap"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

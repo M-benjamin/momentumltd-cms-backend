@@ -1,0 +1,541 @@
+* {
+    font-family: 'Droid Sans', sans-serif;
+}
+
+header,
+a {
+    color: #0281fe;
+}
+
+
+ .social-network ul li a:hover{
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Exo', sans-serif;
+}
+
+span {
+    font-family: 'Palanquin', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+
+
+
+/*==================Top Header========================*/
+
+.infos {
+    overflow: hidden;
+}
+
+.contact {
+    padding: 20px 0px;
+}
+
+.social-network {
+    padding: 15px 0px;
+}
+
+.social-network ul li {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.social-network ul li:nth-child(1):hover {
+    background: #3B5A9B;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 100%;
+    
+}
+
+.social-network ul li:nth-child(2):hover {
+    background: #63CDF1;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 100%;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    
+}
+
+.social-network ul li:nth-child(3):hover {
+    background: #DB2814;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 100%;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    
+}
+
+.social-network ul li:nth-child(4):hover {
+    background: #197697;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 100%;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    
+}
+
+.social-network ul li:nth-child(5):hover {
+    background: #CF3427;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 100%;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    
+}
+
+.social-network ul li:nth-child(6):hover {
+    background: #125688;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 100%;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    
+}
+
+.pull-right {
+    margin: 0px;
+}
+
+
+/*==========================================*/
+
+span.separator {
+    border-bottom: 1px solid grey;
+    display: block;
+    margin-bottom: 30px;
+}
+
+
+/*==================nav-section========================*/
+
+.navbar-default .navbar-nav>.active>a {
+    background: #0281fe;
+    color: black!important;
+}
+
+
+
+.logo img {
+    width: 90px;
+    height: 50px;
+}
+
+.navbar-default {
+    background: none;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #0281fe;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:hover {
+    background: none;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+ul.nav.navbar-nav {
+    padding-left: 145px;
+    padding-top: 20px;
+}
+
+.consultation {
+    padding-top: 20px;
+    padding-left: 120px;
+}
+
+.consultation a {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #0281fe;
+}
+
+.consultation a:hover {
+    color: white;
+}
+
+.consultation a:hover {
+    background-color: #0281f0!important;
+    border: none;
+    padding: 13px;
+}
+
+.nav li:hover:after {
+    width: 100%;
+    background: #0281fe;
+}
+
+.nav li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    -webkit-transition: width .5s ease, background-color .5s ease;
+    -o-transition: width .5s ease, background-color .5s ease;
+    transition: width .5s ease, background-color .5s ease;
+    z-index: 1;
+}
+
+.navbar-toggle {
+    background-color: white;
+}
+
+
+.img-consult img {
+    width: 100%;
+}
+
+section#consulation {
+    background-color: gainsboro;
+    padding: 80px 0px;
+}
+
+input[type="text"], input[type="tel"],input[type="email"],input[type="url"],textarea {
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 49%;
+}
+textarea{
+    
+    height: 300px;
+}
+.contact-consult button {
+    border: none;
+    background: #0281fe;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+.img-consult{
+    
+        background: url(../images/consultation.jpg) center center;
+    height: 500px;
+    background-size: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+
+    
+}
+
+
+
+
+footer {
+    background: black;
+    color: white;
+}
+
+footer p {
+    font-weight: 300;
+}
+
+footer span {
+    font-weight: 600;
+}
+
+.nav-footer li {
+    display: inline-block;
+    padding: 15px;
+}
+
+.nav-footer .fa {
+    padding-right: 20px;
+}
+
+.bottom-footer {
+    background-color: black;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.footer-section h3,
+.footer-contact-us h3 {
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+    font-weight: 300
+}
+
+.footer-section {
+    text-align: center;
+    padding: 80px 0px;
+}
+
+footer .social-network ul li:nth-child(1):hover,
+footer .social-network ul li:nth-child(2):hover,
+footer .social-network ul li:nth-child(3):hover,
+footer .social-network ul li:nth-child(4):hover,
+footer .social-network ul li:nth-child(5):hover,
+footer .social-network ul li:nth-child(6):hover {
+    background: none
+}
+
+.footer-top .fa {
+    background: #0281fe;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.footer-top a {
+    color: white;
+}
+
+.footer-top ul {
+    padding: 0px;
+}
+
+footer .social-network {
+    padding: 0px;
+}
+
+
+
+/*************************************************Media-Query**********************************************************/
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    /*==================nav-section========================*/
+    .consultation {
+        padding-left: 80px;
+    }
+    ul.nav.navbar-nav {
+        padding-left: 25px;
+    }
+    .navbar-default .navbar-nav>li>a {
+        font-size: 13px;
+    }
+    
+.img-consult {
+    width: 100%;
+    margin-bottom: 10px;
+}
+    
+    input[type="text"], input[type="tel"],input[type="email"],input[type="url"],textarea {
+
+    width: 100%;
+}
+    
+    
+}
+
+
+/************************ Medium Devices, Desktops ***********************/
+
+@media (min-width: 768px) and (max-width: 992px) {
+    /*==================nav-section========================*/
+    ul.nav.navbar-nav {
+        padding-left: 20px;
+    }
+    
+.img-consult {
+    width: 100%;
+    margin-bottom: 10px;
+}
+    
+        input[type="text"], input[type="tel"],input[type="email"],input[type="url"],textarea {
+
+    width: 100%;
+}
+
+}
+
+
+/************************ Small Devices, Tablets ************************/
+
+@media (min-width: 580px) and (max-width: 768px) {
+    /*==================Top Header-section========================*/
+    .social-network ul {
+        float: none!important;
+        padding: 0px;
+        text-align: center;
+    }
+    /*==================nav-section========================*/
+    .navbar {
+        padding: 0px;
+        z-index: 1;
+    }
+    .navbar-toggle {
+        margin-top: 20px;
+    }
+    .navbar-collapse {
+        background: white;
+    }
+    .navbar-nav>li>a {
+        color: #0281f0!important;
+    }
+    ul.nav.navbar-nav {
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    .logo img {
+        margin-left: 15px;
+    }
+    
+        .img-consult{
+    
+   width: 90%;
+       margin: 0px 30px;
+
+    }
+    
+            input[type="text"], input[type="tel"],input[type="email"],input[type="url"],textarea {
+
+    width: 90%;
+                margin: 5px 30px;
+}
+
+}
+
+
+/********************* Extra Small Devices, Phones **********************/
+
+@media (min-width: 320px) and (max-width: 580px) {
+    /*==================top-header-section========================*/
+    .social-network ul {
+        float: none!important;
+        padding: 0px;
+        text-align: center;
+    }
+    /*==================nav-section========================*/
+    .navbar {
+        padding: 0px;
+        z-index: 1;
+    }
+    .navbar-toggle {
+        margin-top: 20px;
+    }
+    .navbar-collapse {
+        background: white;
+    }
+    .navbar-nav>li>a {
+        color: #0281f0!important;
+    }
+    ul.nav.navbar-nav {
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    .navbar-toggle {
+        margin-top: 15px;
+    }
+    .logo img {
+        margin-left: 15px;
+    }
+    
+        .img-consult{
+    
+   width: 90%;
+       margin: 0px 30px;
+
+    
+}
+    
+    
+            input[type="text"], input[type="tel"],input[type="email"],input[type="url"],textarea {
+
+    width: 90%;
+                margin: 5px 30px;
+}
+
+}
+
+
+/************************ Custom, iPhone Retina *************************/
+
+@media (max-width: 320px) {
+    /*==================top header-section========================*/
+    .social-network ul li:nth-child(1):hover,
+    .social-network ul li:nth-child(2):hover,
+    .social-network ul li:nth-child(3):hover,
+    .social-network ul li:nth-child(4):hover,
+    .social-network ul li:nth-child(5):hover,
+    .social-network ul li:nth-child(6):hover {
+        padding: 5px 10px;
+    }
+    .social-network ul.pull-right {
+        padding: 0px;
+        float: none!important;
+        text-align: center;
+    }
+    .social-network ul li {
+        padding: 0px 10px;
+    }
+    /*==================nav-section========================*/
+    .logo img {
+        margin-left: 15px;
+    }
+    .navbar {
+        padding: 0px;
+        z-index: 1;
+    }
+    .navbar-toggle {
+        margin-top: 20px;
+    }
+    .navbar-collapse {
+        background: white;
+    }
+    .navbar-nav>li>a {
+        color: #0281f0!important;
+    }
+    ul.nav.navbar-nav {
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    
+        .img-consult{
+    
+   width: 80%;
+       margin: 0px 30px;
+
+    
+}
+    
+            input[type="text"], input[type="tel"],input[type="email"],input[type="url"],textarea {
+
+    width: 80%;
+                margin: 5px 30px;
+}
+
+}
